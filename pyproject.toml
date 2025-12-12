@@ -1,0 +1,45 @@
+[project]
+name = "bump-ghw"
+version = "0.1.0"
+description = "CLI tool to mange your github workflow step versions"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+dependencies = ["githubkit>=0.14.0", "requests>=2.32.5", "typer>=0.20.0"]
+
+
+[tool.basedpyright]
+enableBasedFeatures = true
+
+[tool.ruff]
+line-length = 90
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+  "COM",
+  "D",
+  "ERA",
+  "FIX",
+  "S",
+  "ANN401",
+  "ISC001",
+  "PLE1205",
+  "PLE1206",
+  "PLR2004",
+  "TD003",
+  "TRY400",
+]
+future-annotations = true
+
+[tool.ruff.format]
+preview = true
+
+[dependency-groups]
+dev = [
+  "basedpyright>=1.36.1",
+  "hypothesis>=6.148.7",
+  "pytest>=9.0.2",
+  "ruff>=0.14.9",
+  "taplo>=0.9.3",
+]
