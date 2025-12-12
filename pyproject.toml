@@ -7,6 +7,12 @@ license = "MIT"
 requires-python = ">=3.11"
 dependencies = ["githubkit>=0.14.0", "requests>=2.32.5", "typer>=0.20.0"]
 
+[project.scripts]
+bump-ghw = "bump_ghw:app"
+
+[build-system]
+requires = ["uv_build>=0.9.17,<0.10.0"]
+build-backend = "uv_build"
 
 [tool.basedpyright]
 enableBasedFeatures = true
