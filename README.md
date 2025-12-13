@@ -2,6 +2,20 @@
 
 Bump your github workflow versions! An easy to use local CLI to update your github action yamls.
 
+## Usage
+
+> ![WARN]
+> This is not published yet; so this is not true
+
+```sh
+uvx bump-ghw --gh-token $(gh auth token)
+```
+
+The easiest way to use the CLI is to authenticate through [gh](https://cli.github.com/manual/gh_auth_login) cli and then use that provided token.
+This token will have all the permissions required for this tool.
+
+You can use this CLI without a token, just expect to get quickly rate limited.
+
 ## Rational
 
 We follow [best practices and only output the commit SHA](https://blog.rafaelgss.dev/why-you-should-pin-actions-by-commit-hash) for specific versions.
@@ -22,3 +36,7 @@ This CLI tool is very much a WIP. The following are things I plan to implement i
 
 - [ ] Drop githubkit dependency (way too overkill for this tool)
 - [ ] Cache responses
+
+### Things to investigate
+
+- Update to latest that is more than `N` days old.
