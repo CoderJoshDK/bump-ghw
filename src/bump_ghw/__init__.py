@@ -17,7 +17,7 @@ app = typer.Typer()
 # NOTE: this regex consumes invalid repo names. They will be rejected by the github API
 # and not a concern here
 repos = re.compile(
-    r"(\s*uses:\s*)(?P<owner>[a-zA-Z0-9-]{1,39})\/(?P<repo>[a-zA-Z0-9-_.]{1,100})@(?P<version>\w*)\s*(?P<tag>#?\s*.*)"
+    r"(\s*uses:\s*)(?P<owner>[a-zA-Z0-9-]{1,39})\/(?P<repo>[a-zA-Z0-9_.-]{1,100})@(?P<version>\w*)\s*(?P<tag>#?\s*.*)"
 )
 # ref: <https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#jobsjob_idstepsuses>
 
