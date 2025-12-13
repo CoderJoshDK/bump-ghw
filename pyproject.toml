@@ -4,15 +4,28 @@ version = "0.1.0"
 description = "CLI tool to mange your github workflow step versions"
 readme = "README.md"
 license = "MIT"
+license-files = ["LICENSE"]
 requires-python = ">=3.11"
 dependencies = ["githubkit>=0.14.0", "requests>=2.32.5", "typer>=0.20.0"]
-
-[project.scripts]
-bump-ghw = "bump_ghw:app"
+authors = [
+  { name = "CoderJoshDK", email = "74162303+CoderJoshDK@users.noreply.github.com" },
+]
+keywords = ["github", "version control", "sha", "actions"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+]
 
 [build-system]
 requires = ["uv_build>=0.9.17,<0.10.0"]
 build-backend = "uv_build"
+
+[project.scripts]
+bump-ghw = "bump_ghw:app"
 
 [tool.basedpyright]
 enableBasedFeatures = true
@@ -49,3 +62,8 @@ dev = [
   "ruff>=0.14.9",
   "taplo>=0.9.3",
 ]
+
+[project.urls]
+Homepage = "https://github.com/CoderJoshDK/bump-ghw"
+Repository = "https://github.com/CoderJoshDK/bump-ghw.git"
+Issues = "https://github.com/CoderJoshDK/bump-ghw/issues"

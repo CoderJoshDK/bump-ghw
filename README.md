@@ -5,9 +5,6 @@ yamls.
 
 ## Usage
 
-> ![WARN]
-> This is not published yet; so this is not true
-
 ```sh
 uvx bump-ghw --gh-token $(gh auth token)
 ```
