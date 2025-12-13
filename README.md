@@ -1,6 +1,7 @@
 # bump-ghw
 
-Bump your github workflow versions! An easy to use local CLI to update your github action yamls.
+Bump your github workflow versions! An easy to use local CLI to update your github action
+yamls.
 
 ## Usage
 
@@ -11,8 +12,9 @@ Bump your github workflow versions! An easy to use local CLI to update your gith
 uvx bump-ghw --gh-token $(gh auth token)
 ```
 
-The easiest way to use the CLI is to authenticate through [gh](https://cli.github.com/manual/gh_auth_login) cli and then use that provided token.
-This token will have all the permissions required for this tool.
+The easiest way to use the CLI is to authenticate through
+[gh](https://cli.github.com/manual/gh_auth_login) cli and then use that provided token. This token
+will have all the permissions required for this tool.
 
 You can use this CLI without a token, just expect to get quickly rate limited.
 
@@ -20,12 +22,13 @@ You can use this CLI without a token, just expect to get quickly rate limited.
 
 We follow [best practices and only output the commit SHA](https://blog.rafaelgss.dev/why-you-should-pin-actions-by-commit-hash) for specific versions.
 
-bump-ghw is useful for those repos that don't have systems to automatically update dependencies.
-But if possible, use renovate!
+bump-ghw is useful for those repos that don't have systems to automatically update
+dependencies. But if possible, use renovate!
 
 ## Roadmap
 
-This CLI tool is very much a WIP. The following are things I plan to implement into this tool.
+This CLI tool is very much a WIP. The following are things I plan to implement into this
+tool.
 
 - [ ] Ability to convert tag pins into SHA pins (but not update).
 - [ ] Update to but ask to increment major version
