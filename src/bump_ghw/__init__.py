@@ -64,7 +64,7 @@ def gh_replace_latest_repo(
 @app.command()
 def bump(
     gh_token: Annotated[
-        str | None, typer.Option(help="The GitHub API token to use.")
+        str | None, typer.Option(help="The GitHub API token to use.")  # pyright: ignore[reportUnknownMemberType]
     ] = None,
 ) -> None:
     gh = GitHub(gh_token)
